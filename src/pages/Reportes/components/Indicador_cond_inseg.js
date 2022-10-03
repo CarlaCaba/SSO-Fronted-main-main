@@ -84,3 +84,5 @@ const columns = [
     { id: 2, mes: 'Febrero', numerador: '90', denominador: '180', resultados: '83,33%', analisis: 'ninguno', acciones:'ninguno'},
     
   ];
+
+  

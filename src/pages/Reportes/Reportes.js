@@ -9,6 +9,7 @@ import { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
 import Gestion, {Gestiion} from './components/Gestion_talento';
 import Seguridad ,{Seguriidad} from './components/seguridad_ocupacional';
+import Salud , {Saluud} from './components/Salud_Ocupacional';
 import Inseguras , {Inseguuras} from './components/Indicador_cond_inseg';
 import { NavDropdown } from 'react-bootstrap';
 const Reportes = () => {
@@ -46,7 +47,7 @@ const Reportes = () => {
  
 
 <a href='seguridad_ocupacional'>Seguridad Ocupacional</a>
-<a href='Gestion_Talento'>Salud Ocupacional</a>
+<a href='Salud_Ocupacional'>Salud Ocupacional</a>
 <a href='Gestion_Talento'>Formación y Capacitación</a>
 <a href='Gestion_Talento'>Remuneraciones</a>
 <a href='Gestion_Talento'>Administración del Talento</a>

@@ -11,6 +11,7 @@ import Gestion from  './pages/Reportes/components/Gestion_talento';
 import Archivo from './pages/Reportes/components/gestion_finaciera';
 import GestionC from '../src/pages/Reportes/components/gestion_cumunicacion';
 import SeguridadO from '../src/pages/Reportes/components/seguridad_ocupacional';
+import SaludO from '../src/pages/Reportes/components/Salud_Ocupacional';
 import CondicionesIn from '../src/pages/Reportes/components/Indicador_cond_inseg';
 
 import './App.css';
@@ -55,6 +56,9 @@ function App() {
             </Route>
             <Route path={'/Indicador_cond_inseg'}>
             <CondicionesIn />
+            </Route>
+            <Route path={'/Salud_Ocupacional'}>
+            <SaludO />
             </Route>
            
         </Switch>
