@@ -32,12 +32,25 @@ const Indicador_cond_inseg = () => {
         </div>
     
         <br></br>
-        <div className='indicInseg'> <h3>Indicador de Condiciones Inseguras</h3></div>
+        <div className='indicInseg'> <h5>Indicador de Condiciones Inseguras</h5></div>
         <br/>
+        <div className='informacion'>
+          
+
+        </div>
+        <br></br>
         <div className='table-resposive'>
-          <table className='table table-bordered' padding="2px">
+        <div class="p-2 mb-1 bg-dark text-white text-center">
+          INFORMACIÓN DEL INDICADOR 
+          </div><br></br>
+        <div class="p-2 mb-1 bg-dark text-white text-center">
+          DATOS DEL INDICADOR 
+          </div>
+          <table className='table table-bordered'>
+            
             <thead>
               <tr className='table-dark'>
+              
                 <th>ID</th>
                 <th>MES</th>
                 <th>NUMERADOR</th>
@@ -169,7 +182,9 @@ const Indicador_cond_inseg = () => {
         </div>
         
         
-
+        <div class="p-2 mb-1 bg-dark text-white text-center">
+          GRAFICA 
+          </div>
     
     <br></br>
     
