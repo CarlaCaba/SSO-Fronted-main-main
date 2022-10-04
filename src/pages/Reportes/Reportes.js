@@ -53,7 +53,7 @@ const Reportes = () => {
 <a href='Gestion_Talento'>Administración del Talento</a>
 <a href='Gestion_Talento'>Desarrollo Institucional</a>
 <a href='Gestion_Talento'>Atención Cuidadana</a>
-<a href='GPrueba'>Atención Cuidadana</a>
+
 
 </div>
 
