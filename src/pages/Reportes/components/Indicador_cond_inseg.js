@@ -3,7 +3,10 @@ import '../../Reportes/Reportes.css'
 import estadistica from '../../Reportes/components/estadistica.png'
 import logo from '../../Reportes/components/logo_login.png'
 
-import { DataGrid } from '@mui/x-data-grid';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 
 const Indicador_cond_inseg = () => {
 
@@ -31,16 +34,142 @@ const Indicador_cond_inseg = () => {
         <br></br>
         <div className='indicInseg'> <h3>Indicador de Condiciones Inseguras</h3></div>
         <br/>
+        <div className='table-resposive'>
+          <table className='table table-bordered' padding="2px">
+            <thead>
+              <tr className='table-dark'>
+                <th>ID</th>
+                <th>MES</th>
+                <th>NUMERADOR</th>
+                <th>DENOMINADOR</th>
+                <th>RESULTADOS</th>
+                <th>ANALISIS DE CAUSAS</th>
+                <th>ACCIONES PROPUESTAS</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Enero</td>
+                <td>16</td>
+                <td>16</td>
+                <td>100%</td>
+                <td>Planificacion</td>
+                <td>Planificacion</td>
+
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Febrero</td>
+                <td>90</td>
+                <td>108</td>
+                <td>83.33%</td>
+                <td></td>
+                <td></td>
+
+              </tr>
+             
+              <tr>
+                <td>3</td>
+                <td>Marzo</td>
+                <td>51</td>
+                <td>53</td>
+                <td>96,23%</td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Abril</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Mayo</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Junio</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Julio</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Agosto</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Septiembre</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Octubre</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Noviembre</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Diciembre</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>                
+
+              </tr>
+
+            </tbody>
+
+          </table>
+        </div>
         
-          <div style={{ height: 400, width: '100%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-      />
-    </div>
+        
+
     
     <br></br>
     
@@ -64,25 +193,6 @@ const Indicador_cond_inseg = () => {
       );
     
 }
-export default Indicador_cond_inseg 
 
-
-const columns = [
-    { field: 'id', headerName: 'ID', width: 70 },
-    { field: 'mes', headerName: 'Mes', width: 100 },
-    { field: 'numerador', headerName: 'Numerador', width: 120 },
-    { field: 'denominador', headerName: 'Denomidador', width: 120},
-    { field: 'resultados', headerName: 'Resultados', width: 100 },
-    { field: 'analisis', headerName: 'Analisis de Causas', width: 150},
-    { field: 'acciones', headerName: 'Acciones Propuestas', width: 150 }
-    
-
-  ];
-  
-  const rows = [
-    { id: 1, mes: 'Enero', numerador: '16', denominador: '16', resultados: '100%', analisis: 'planificación', acciones:'planificación'},
-    { id: 2, mes: 'Febrero', numerador: '90', denominador: '180', resultados: '83,33%', analisis: 'ninguno', acciones:'ninguno'},
-    
-  ];
-
+export default Indicador_cond_inseg;
   
